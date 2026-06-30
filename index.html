@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<meta http-equiv="X-UA-Compatible"
+content="IE=edge">
+
+<title>Kerman Part | فروشگاه قطعات خودرو</title>
+
+<meta name="description"
+content="فروشگاه تخصصی قطعات خودرو">
+
+<meta name="theme-color"
+content="#BF4646">
+
+<link rel="icon"
+href="images/favicon.png">
+
+<link rel="preconnect"
+href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800&display=swap"
+rel="stylesheet">
+
+<link rel="stylesheet"
+href="style.css">
+
+<link rel="stylesheet" href="css/all.min.css">
+
+</head>
+
+<body>
+
+<!--========================
+LOADER
+=========================-->
+
+<div id="loader">
+
+<div class="loader-box">
+
+<img
+src="asset/Untitled-1 copy.svg"
+alt="Logo" style="zoom: 150%; ">
+
+<div class="loader-bar">
+
+<span></span>
+
+</div>
+
+<p>
+
+در حال بارگذاری...
+
+</p>
+
+</div>
+
+</div>
+
+<!--========================
+HEADER
+=========================-->
+
+<header id="header">
+
+<div class="container header-container">
+
+<a href="#"
+
+class="logo">
+
+<img
+src="asset/Untitled-1 copy.svg"
+alt="Logo" style="zoom: 150%; margin: -15px;">
+
+<div>
+
+<h2>Kerman Part</h2>
+
+<span>
+
+فروشگاه تخصصی قطعات خودرو
+
+</span>
+
+</div>
+
+</a>
+
+<nav class="desktop-menu">
+
+<a href="#">خانه</a>
+
+<a href="#productsSection">محصولات</a>
+
+
+
+<a href="#contact">تماس با ما</a>
+
+</nav>
+
+<div class="header-actions">
+
+<button
+id="searchToggle"
+class="icon-btn">
+
+<img src="asset/search.png" alt="">
+
+</button>
+
+<button
+id="cartButton"
+class="icon-btn">
+
+<img src="asset/shopping-cart.png" alt="">
+
+<span id="cartCount">
+
+0
+
+</span>
+
+</button>
+
+<button
+id="menuButton"
+class="icon-btn mobile-only">
+
+☰
+
+</button>
+
+</div>
+
+</div>
+
+</header>
+
+<!--========================
+MOBILE MENU
+=========================-->
+
+<div id="mobileMenu">
+
+<nav>
+
+<a href="#">خانه</a>
+
+<a href="#productsSection">محصولات</a>
+
+<a href="#about">درباره ما</a>
+
+<a href="#contact">تماس با ما</a>
+
+</nav>
+
+</div>
+
+<!--========================
+MAIN
+=========================-->
+
+<main>
+
+<!--========================
+HERO
+=========================-->
+
+<section class="hero">
+
+<img
+
+class="hero-image"
+
+src="images/6.avif"
+
+alt="Hero">
+
+<div class="hero-overlay"></div>
+
+<div class="hero-content">
+
+<div class="hero-badge">
+
+فروشگاه تخصصی قطعات خودرو
+
+</div>
+
+<h1>
+
+Kerman Part
+
+</h1>
+
+<p>
+
+عرضه انواع قطعات اصلی خودرو با بهترین قیمت
+
+</p>
+
+<div class="hero-buttons">
+
+<a
+
+href="#productsSection"
+
+class="primary-btn">
+
+مشاهده محصولات
+
+</a>
+
+<a
+
+href="#contact"
+
+class="secondary-btn">
+
+تماس با ما
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!--========================
+SEARCH
+=========================-->
+
+<section class="search-section">
+
+<div class="container">
+
+<div class="search-box">
+
+<input
+
+id="searchInput"
+
+type="text"
+
+placeholder="جستجوی نام، کد یا دسته بندی...">
+
+<button id="searchButton">
+
+<img src="asset/search (1).png" alt="">
+
+</button>
+
+</div>
+
+</div>
+
+</section>
+<!--========================
+CATEGORY
+=========================-->
+
+<section class="category-section">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>
+
+دسته بندی محصولات
+
+</h2>
+
+<p>
+
+دسته مورد نظر خود را انتخاب کنید
+
+</p>
+
+</div>
+
+<div class="category-wrapper">
+    <div class="category-indicator"></div>
+
+<div id="categoryTrack" class="category-track">
+
+
+
+</div>
+
+
+
+</div>
+
+<!-- JS -->
+
+</div>
+
+</div>
+
+</section>
+
+<!--========================
+PRODUCTS
+=========================-->
+
+<section
+
+id="productsSection"
+
+class="products-section">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>
+
+محصولات
+
+</h2>
+
+<p>
+
+قطعات اصلی خودرو
+
+</p>
+
+</div>
+
+<div
+
+id="productsGrid"
+
+class="products-grid">
+
+<!-- JS -->
+
+</div>
+
+</div>
+
+</section>
+
+<!--========================
+PRODUCT MODAL
+=========================-->
+
+<div
+
+id="productModal"
+
+class="modal">
+
+<div class="modal-content">
+
+<button
+
+id="closeModal"
+
+class="close-btn">
+
+✕
+
+</button>
+
+<div class="modal-image">
+
+<img
+
+id="modalImage"
+
+src=""
+
+alt="">
+
+</div>
+
+<div class="modal-info">
+
+<span id="modalCode"></span>
+
+<h2 id="modalTitle"></h2>
+
+<p id="modalInfo"></p>
+
+<h3 id="modalPrice"></h3>
+
+<div class="quantity-box">
+
+<button id="minusBtn">
+
+−
+
+</button>
+
+<input
+
+id="quantityInput"
+
+type="number"
+
+value="1"
+
+min="1">
+
+<button id="plusBtn">
+
++
+
+</button>
+
+</div>
+
+<button
+
+id="addToCartBtn"
+
+class="primary-btn">
+
+افزودن به سبد خرید
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<!--========================
+SIDE CART
+=========================-->
+
+<div
+
+id="cartOverlay">
+
+</div>
+
+<aside
+
+id="sideCart"
+
+class="side-cart">
+
+<div class="cart-header">
+
+<h2>
+
+سبد خرید
+
+</h2>
+
+<button id="closeCart">
+
+✕
+
+</button>
+
+</div>
+
+<div
+
+id="cartItems"
+
+class="cart-items">
+
+<!-- JS -->
+
+</div>
+
+<div class="cart-footer">
+
+<div class="cart-total">
+
+<span>
+
+جمع کل
+
+</span>
+
+<strong id="cartTotal">
+
+0 تومان
+
+</strong>
+
+</div>
+
+<button
+
+id="checkoutBtn"
+
+class="primary-btn">
+
+ثبت سفارش
+
+</button>
+
+</div>
+
+</aside>
+
+<!--========================
+CUSTOMER MODAL
+=========================-->
+
+<div
+
+id="customerModal"
+
+class="modal">
+
+<div class="modal-content customer-box">
+
+<button
+
+id="closeCustomerModal"
+
+class="close-btn">
+
+✕
+
+</button>
+
+<h2>
+
+ثبت سفارش
+
+</h2>
+
+<input
+
+id="customerName"
+
+type="text"
+
+placeholder="نام و نام خانوادگی">
+
+<input
+
+id="customerPhone"
+
+type="tel"
+
+placeholder="شماره موبایل">
+
+<textarea
+
+id="customerAddress"
+
+placeholder="آدرس کامل">
+
+</textarea>
+
+<div class="customer-buttons">
+
+<button
+
+id="sendWhatsappBtn"
+
+class="primary-btn">
+
+ثبت سفارش در واتساپ
+
+</button>
+
+<button
+
+id="sendEmailBtn"
+
+class="secondary-btn">
+
+ارسال سفارش به ایمیل
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+<!--========================
+TOAST
+=========================-->
+
+<div id="toast">
+
+<span id="toastText">
+
+محصول به سبد خرید اضافه شد.
+
+</span>
+
+</div>
+
+<!--========================
+BACK TO TOP
+=========================-->
+
+<button id="backTop">
+
+↑
+
+</button>
+
+<!--========================
+FOOTER
+=========================-->
+
+<footer id="contact">
+
+<div class="container footer-container">
+
+<div class="footer-about">
+
+<img
+
+src="asset/Untitled-1 copy.svg"
+
+alt="Logo" style="margin: -20px;">
+
+<h2>
+
+Kerman Part
+
+</h2>
+
+<p>
+
+فروشگاه تخصصی عرضه انواع قطعات خودرو با بهترین کیفیت و مناسب‌ترین قیمت.
+
+</p>
+
+</div>
+
+<div class="footer-links">
+
+<h3>
+
+دسترسی سریع
+
+</h3>
+
+<a href="#">
+
+خانه
+
+</a>
+
+<a href="#productsSection">
+
+محصولات
+
+</a>
+
+<a href="#about">
+
+درباره ما
+
+</a>
+
+<a href="#contact">
+
+تماس با ما
+
+</a>
+
+</div>
+
+<div class="footer-contact">
+
+<h3>
+
+اطلاعات تماس
+
+</h3>
+
+<p>
+
+📞 09131989254
+
+</p>
+
+<p>
+
+💬 واتساپ: 09131989254
+
+</p>
+
+
+</div>
+
+</div>
+
+<div class="copyright">
+
+© 2025 Kerman Part | تمامی حقوق محفوظ است.
+طرح و توسعه وب:  پارسا علویان
+09130468709
+
+</div>
+
+</footer>
+
+</main>
+
+<!--========================
+PRODUCT DATA
+=========================-->
+
+<script src="products.js"></script>
+
+<!--========================
+EMAILJS
+=========================-->
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script>
+emailjs.init({
+    publicKey: "gk4fVckL7S_UVAinr"
+});
+</script>
+
+<!--========================
+MAIN JS
+=========================-->
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
